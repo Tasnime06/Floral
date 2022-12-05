@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+<div class="card-group" style="display: flex;flex-wrap: wrap;justify-content: center;padding: 40px calc((100% - (255px * 6)) / 2);">
+        <ng-container *ngFor="let i of lesProduits,let c = index">
+            <app-products [prd]="i" *ngIf="i.categorie=='earings'"></app-products>
+        </ng-container>    
+    </div>
+    

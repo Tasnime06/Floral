@@ -1,0 +1,77 @@
+<app-navbar></app-navbar>
+  <form class="sidenav" style="padding-top: 100px;margin-bottom: 100px;" [formGroup]="productForm" (ngSubmit)="research()">
+    <div class="page">
+      <div class="field field_v1">
+        <label for="first-name" class="ha-screen-reader">Name</label>
+        <input formControlName="libelle" id="first-name" class="field__input" placeholder="Name of the product" required>
+        <span class="field__label-wrap" aria-hidden="true">
+        <span class="field__label">Name</span>
+        </span>
+    </div>
+
+      <div class="field field_v2">
+        <label for="last-name" class="ha-screen-reader">Category</label>
+        <select formControlName="categorie"  class="field__input" placeholder="select the category of the product" required="true">
+                    <option value="all" selected>All categories</option>
+                    <option value="earings">Earings</option>
+                    <option value="HairClips">Hair Clips</option>
+                    <option value="bracelet">Bracelet</option>
+                    <option value="necklace">Necklace</option>
+                    <option value="ring">Ring</option>
+        </select>
+        <span class="field__label-wrap" aria-hidden="true">
+        <span class="field__label">Category</span>
+        </span>
+    </div>  
+
+        <div class="field field_v2">
+          <label for="prixmax" class="ha-screen-reader"> Maximal Price</label>
+          <div class="input-group-prepend" style="margin-top: 20px;height: 25px;">
+            <span class="input-group-text" id="basic-addon1">$</span>
+          </div>
+          <input type="number" min="5" formControlName="pricemax" for="prixmax"  class="field__input" placeholder="Price of the product" required>
+          <span class="field__label-wrap" aria-hidden="true">
+          <span class="field__label">Maximal Price</span>
+          </span>
+      </div> 
+
+        <div class="field field_v2">
+          <label for="prixmin" class="ha-screen-reader">Minimal Price</label>
+          <div class="input-group-prepend" style="margin-top: 20px;height: 25px;">
+            <span class="input-group-text" id="basic-addon1">$</span>
+          </div>
+          <input type="number" min="5" formControlName="pricemin" for="prixmin"  class="field__input" placeholder="Price of the product" required>
+          <span class="field__label-wrap" aria-hidden="true">
+          <span class="field__label">Minimal Price</span>
+          </span>
+      </div> 
+      <input type="submit" value="Search"  class="btn btn-primary" data-dismiss="modal">
+      </div> 
+  </form>
+  <div class="main" style="padding-top: 50px;">
+      
+    <h2>Resultat : </h2>
+    <div class="card-group" style="display: flex;flex-wrap: wrap;justify-content: center;padding: 40px calc((100% - (255px * 6)) / 2);">
+      
+      <ng-container *ngIf="!aux">
+          <ng-container *ngFor="let i of lesProduits">
+              <app-products [prd]="i"></app-products>
+          </ng-container> 
+      </ng-container>
+
+      <ng-container *ngIf="aux">
+          <ng-container *ngFor="let i of lesProduits">
+              <ng-container *ngIf="aux_cat=='all'">
+                  <app-products [prd]="i" *ngIf="i.prix<=aux_prxmax&&i.libelle.includes(aux_lib)&&i.prix>=aux_prxmin">{{add()}</app-products>
+                  <!-- <p *ngIf="i.prix>=aux_prxmax&&i.libelle.includes(aux_lib)&&i.prix<=aux_prxmin"> {{add()}}</p> -->
+
+              </ng-container>
+              <ng-container *ngIf="aux_cat!='all'">
+                  <app-products [prd]="i" *ngIf="i.categorie==aux_cat&&i.prix<=aux_prxmax&&i.libelle.includes(aux_lib)&&i.prix>=aux_prxmin">{{add()}</app-products>
+              </ng-container>
+          </ng-container>  
+      </ng-container> 
+      <p *ngIf="!aux2">product not Available</p>
+      <br><br><br><br><br><br><br>
+    </div>
+  </div>

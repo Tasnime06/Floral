@@ -1,0 +1,14 @@
+  <div class="col-sm-6" style="flex: 0 0 215px; margin: 1em 20px;">
+    <div class="card" style="width: 18rem;height: auto;">
+      <img [src]="'/assets'+aux+'.jpg'" (mouseover)="changer()" (mouseout)="changer()" alt="image" height="250px" width="100px" class="card-img-top" alt="..." *ngIf="!aux.includes('http')">
+      <img [src]="aux" (mouseover)="changer()" (mouseout)="changer()" alt="image" height="250px" width="100px" class="card-img-top" alt="..." *ngIf="aux.includes('http')">
+        <div class="card-body">
+          <div  style="display: flex;
+          justify-content: space-between;">
+            <h5 class="card-title"style="font-family:Century Gothic;">{{prd.libelle}} </h5>
+          <h4 style="font-family: Copperplate Gothic Light;"> ${{prd.prix}}</h4></div>
+          <p class="card-text" style="font-family: Century Gothic;">{{prd.description}}</p> 
+          <a [routerLink]="['/product', prd.id]" class="btn btn-light" id="button"> <span>Details</span> </a>
+        </div>
+      </div> 
+  </div>

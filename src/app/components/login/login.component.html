@@ -1,0 +1,27 @@
+<div style="height: 100px;"></div>
+
+<div class="text-center">
+    
+   <main class="form-signin">
+     <form [formGroup]="formData" (ngSubmit)="onClickSubmit(formData.value)">
+       <img class="mb-4" src="/assets/photo/logo.png" alt="" width="160" height="50">
+       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      <br>
+       <div class="form-floating">
+         <input type="email" class="form-control" placeholder="name@example.com" id="username" formControlName="userName" required>
+         <label for="username">Email address</label>
+       </div>
+       <div class="form-floating">
+         <input type="password" class="form-control" id="inputPassword" formControlName="password" placeholder="Password" required>
+         <label for="inputPassword">Password</label>
+       </div>
+   
+       <button class="btn btn-light" id="button" type="submit">Sign in</button>
+       <p class="mt-5 mb-3 text-muted">FLORAL Store</p>
+       <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
+     </form>
+   </main>
+   
+   
+       
+</div>

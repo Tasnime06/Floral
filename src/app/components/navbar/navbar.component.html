@@ -1,0 +1,84 @@
+
+
+<div class="fixed-top"> 
+    <div class="navigation-wrap bg-light start-header start-style" style="height:70px; background-color: antiquewhite;margin-bottom: 50px; ">
+        <div class="container">
+                <div class="col-18">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                            <a routerLink="/home"><img src="/assets/photo/logo.png" alt="" id="logo"></a>  
+                            <div class="collapse navbar-collapse" style="justify-content: space-between;">
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item" >
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/home" style="color:black;font-family: Century Gothic;">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/earings" style="color:black;font-family: Century Gothic;">Earings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/neckless" style="color:black;font-family: Century Gothic;">Necklace</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/rings" style="color:black;font-family: Century Gothic;">Rings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/bracelet" style="color:black;font-family: Century Gothic;">Bracelet</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/hairClips"style="color:black;font-family: Century Gothic;">Hair Clips</a>
+                                    </li>
+                                    <li class="nav-item" *ngIf="isUserLoggedIn;">
+                                        <a class="nav-link" routerLinkActive="act" routerLink="/addproduct" style="color:black;font-family: Century Gothic;">Add Product</a>
+                                    </li>
+                                    </ul>
+
+
+                                    <ul class="nav nav-tabs" >
+                                    
+                                    <li class="nav-item" style="display: flex;">
+                                        <a class="nav-link" routerLink="/search"><img src="/assets/photo/search.svg" alt=""></a>
+                                    </li>
+                                    
+
+                                    <li class="nav-item">
+                                        <div class="dropdown">
+                                            <a class="nav-link dropbtn" routerLink="/cart"><img src="/assets/photo/shopping-cart.svg" alt=""></a>
+                                            <div class="dropdown-content" style="margin-left: -230px;">
+                                              <ul>
+                                                <!-- *ngfor="let itm of cartitems" -->
+                                                <li style="display: flex; margin: 9px;padding: 8px;" *ngFor="let itm of cartitems">
+                                                    <img [src]="'/assets'+itm.product.images[0]+'.jpg'" class="photo" alt="..." *ngIf="!itm.product.images[0].includes('http')">
+                                                    <img [src]="itm.product.images[0]" class="photo" alt="..." *ngIf="itm.product.images[0].includes('http')">
+                                                    
+                                                    <div style="display: flex;" >
+                                                        <h6>{{itm.product.libelle}} </h6>
+                                                        <p style="color: red;"> ${{itm.product.prix}}</p>
+                                                    </div>
+                                                </li> <hr>
+                                                <li style="display: flex; margin:9px;padding: 8px;">
+                                                    <div style="display: flex;" >
+                                                        <h6>Total : </h6>
+                                                        <p style="color: red;"> ${{total}}</p>
+                                                    </div>
+                                                </li>
+                                                
+                                              </ul>
+                                            </div>
+                                          </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div *ngIf="isUserLoggedIn;">
+                                            <a class="nav-link" routerLink="/logout"><img src="/assets/photo/log-out.svg" alt="Log Out"></a>
+                                        </div>
+                                        <div *ngIf="isUserLoggedIn == false;">
+                                                    <a class="nav-link" routerLink="/login"><img src="/assets/photo/user.svg" alt="Log In"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </nav>
+                </div>
+        </div> 
+    </div>
+    </div>
+    <div style="margin-bottom: 60px;">
+    </div>

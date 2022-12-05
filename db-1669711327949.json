@@ -1,0 +1,1059 @@
+{
+  "listpoducts": [
+    {
+      "id": 1,
+      "libelle": "Luxury earings",
+      "enStock": true,
+      "prix": 15,
+      "description": "New Women's Luxury Opals Hoop Earrings ",
+      "categorie": "earings",
+      "dateAjout": "01-12-2022T00:00:00",
+      "images": [
+        "/earings/luxury1",
+        "/earings/luxury2",
+        "/earings/luxury3",
+        "/earings/luxury4"
+      ],
+      "comments": [
+        {
+          "name": "Chloe",
+          "comment": "They're cute ",
+          "note": 5
+        },
+        {
+          "name": "Mila",
+          "comment": "I bought them for me. Very nice. I recommend it",
+          "note": 4
+        },
+        {
+          "name": "tasnime",
+          "comment": "recommended",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "libelle": "Pearl earings",
+      "enStock": true,
+      "prix": 20,
+      "description": "Trendy Pearl Earrings For Women, New collection ",
+      "categorie": "earings",
+      "dateAjout": "05-01-2022T00:00:00",
+      "images": [
+        "/earings/pearl1",
+        "/earings/pearl2"
+      ],
+      "comments": [
+        {
+          "name": "Aurora",
+          "comment": "Exactly as shown very beautifull ",
+          "note": 5
+        },
+        {
+          "name": "Nova",
+          "comment": "Cool earrings, very gentle. I bought my daughter A similar model always looks beautiful.",
+          "note": 5
+        },
+        {
+          "name": "Marie",
+          "comment": "Everything perfect I liked very much ",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "libelle": "Whale earings",
+      "enStock": true,
+      "prix": 22,
+      "description": "Beautiful Whale-tail-shaped earings, New collection 2022",
+      "categorie": "earings",
+      "dateAjout": "06-06-2022T00:00:00",
+      "images": [
+        "/earings/whale1",
+        "/earings/whale2"
+      ],
+      "comments": [
+        {
+          "name": "Zoey",
+          "comment": "So sweet",
+          "note": 5
+        },
+        {
+          "name": "Riley",
+          "comment": "Beautiful, delicate earrings. Thank you ",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "libelle": "Heart earings",
+      "enStock": false,
+      "prix": 16,
+      "description": " Silver Color Geometric Heart-shaped Earrings for Women",
+      "categorie": "earings",
+      "dateAjout": "21-08-2022T00:00:00",
+      "images": [
+        "/earings/heart1",
+        "/earings/heart2"
+      ],
+      "comments": [
+        {
+          "name": "Zoe",
+          "comment": "beautiful but small compared to picture ",
+          "note": 4
+        },
+        {
+          "name": "Hannah",
+          "comment": "The quality is so-so. However, if we compare with the price then it is good",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "libelle": "Flower earings",
+      "enStock": true,
+      "prix": 15.5,
+      "description": "Luxury Crystal Flower Drop Dangle Earrings for Women ",
+      "categorie": "earings",
+      "dateAjout": "13-07-2021T00:00:00",
+      "images": [
+        "/earings/flower1",
+        "/earings/flower2",
+        "/earings/flower3"
+      ],
+      "comments": [
+        {
+          "name": "Stella",
+          "comment": "Beautiful little cute earrings, the quality is good !",
+          "note": 5
+        },
+        {
+          "name": "Victoria",
+          "comment": "Very cute ",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "libelle": "Daiso easings",
+      "enStock": false,
+      "prix": 30,
+      "description": "Cute Daiso Earings Spring limited collection For Women",
+      "categorie": "earings",
+      "dateAjout": "24-04-2022T00:00:00",
+      "images": [
+        "/earings/daiso1",
+        "/earings/daiso2",
+        "/earings/daiso3",
+        "/earings/daiso4"
+      ],
+      "comments": [
+        {
+          "name": "Bella",
+          "comment": "So Elegant",
+          "note": 4.5
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "libelle": "Butterfly earings",
+      "enStock": true,
+      "prix": 25,
+      "description": "Elegant Rhinestone Butterfly Stud Earrings For Women",
+      "categorie": "earings",
+      "dateAjout": "18-08-2021T00:00:00",
+      "images": [
+        "/earings/butterfly1",
+        "/earings/butterfly2"
+      ],
+      "comments": [
+        {
+          "name": "Kris",
+          "comment": "Good quality and beautiful item ",
+          "note": 5
+        },
+        {
+          "name": "kylie",
+          "comment": "So chic, I like it",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "libelle": "Drop bracelet",
+      "enStock": true,
+      "prix": 12.5,
+      "description": "Water Drop Gold Colour Earrings For Women",
+      "categorie": "earings",
+      "dateAjout": "18-05-2021T00:00:00",
+      "images": [
+        "/bracelet/drop1",
+        "/bracelet/drop2",
+        "/bracelet/drop3",
+        "/bracelet/drop4"
+      ],
+      "comments": [
+        {
+          "name": "Ariana",
+          "comment": "Super beautiful and tender ",
+          "note": 5
+        },
+        {
+          "name": "Jassie",
+          "comment": "Delicate and subtle adjustable length",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "libelle": "Dollar Necklace",
+      "enStock": true,
+      "prix": 20,
+      "description": "New Women's Long necklace necklace with a pearl",
+      "categorie": "necklace",
+      "dateAjout": "09-10-2022T00:00:00",
+      "images": [
+        "/necklace/dollar1",
+        "/necklace/dollar2"
+      ],
+      "comments": [
+        {
+          "name": "Ivy",
+          "comment": "It looks very gentle. Fast shipping",
+          "note": 5
+        },
+        {
+          "name": "Lucy",
+          "comment": "Very nice but very small",
+          "note": 3.5
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "libelle": "Roman necklace",
+      "enStock": true,
+      "prix": 10,
+      "description": "New Women's Roman jewerly styled-necklace with a sea pearl and a half Chain ",
+      "categorie": "necklace",
+      "dateAjout": "25-02-2022T00:00:00",
+      "images": [
+        "/necklace/roman1",
+        "/necklace/roman2",
+        "/necklace/roman3"
+      ],
+      "comments": [
+        {
+          "name": "Elena",
+          "comment": "Very cute necklaces! I ordered myself and a friend, we really liked it!",
+          "note": 5
+        },
+        {
+          "name": "Delilah",
+          "comment": "Very beautiful necklace, fully matches the picture, thank you very much",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "libelle": "Bow necklace",
+      "enStock": true,
+      "prix": 11.9,
+      "description": "High necklace - Bow shaped with diamonds New collection 2022",
+      "categorie": "necklace",
+      "dateAjout": "16-06-2022T00:00:00",
+      "images": [
+        "/necklace/bow1",
+        "/necklace/bow2",
+        "/necklace/bow3"
+      ],
+      "comments": [
+        {
+          "name": "Queen",
+          "comment": "Ten out of Ten! So amazing",
+          "note": 5
+        },
+        {
+          "name": "Delilah",
+          "comment": "Its so pretty, and it looks exactly like the picture",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "libelle": "Square necklace",
+      "enStock": true,
+      "prix": 7,
+      "description": " Gold Color Small Square Chic nacklace for Women",
+      "categorie": "necklace",
+      "dateAjout": "21-11-2022T00:00:00",
+      "images": [
+        "/necklace/square1",
+        "/necklace/square2",
+        "/necklace/square3"
+      ],
+      "comments": [
+        {
+          "name": "Caroline",
+          "comment": "I loveeee this necklace. it looks so delicate and precious!",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "libelle": "Start and moon necklace",
+      "enStock": true,
+      "prix": 20,
+      "description": "Double Strand necklace in gold - Star and moon For everyday",
+      "categorie": "necklace",
+      "dateAjout": "18-11-2021T00:00:00",
+      "images": [
+        "/necklace/star_moon1",
+        "/necklace/star_moon2"
+      ],
+      "comments": [
+        {
+          "name": "Adeline",
+          "comment": "Very beautiful",
+          "note": 4
+        },
+        {
+          "name": "Anna",
+          "comment": "Excellent. It's nice and nice for your price, comes in very good condition. The quality is great.",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "libelle": "Heart nacklace",
+      "enStock": false,
+      "prix": 17,
+      "description": "Cute Small Red Heart nackless For Women, limited edition",
+      "categorie": "necklace",
+      "dateAjout": "15-07-2022T00:00:00",
+      "images": [
+        "/necklace/heart1",
+        "/necklace/heart2"
+      ],
+      "comments": [
+        {
+          "name": "Sarah",
+          "comment": "Looks nice and so inexpensive !",
+          "note": 5
+        },
+        {
+          "name": "Athena",
+          "comment": "Nice item",
+          "note": 5
+        },
+        {
+          "name": "Athena",
+          "comment": "So beautiful",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "libelle": "Stars necklace",
+      "enStock": true,
+      "prix": 15,
+      "description": "Elegant Multiple Stars neckace For Women",
+      "categorie": "necklace",
+      "dateAjout": "28-04-2021T00:00:00",
+      "images": [
+        "/necklace/stars1",
+        "/necklace/stars2",
+        "/necklace/stars3",
+        "/necklace/stars4"
+      ],
+      "comments": [
+        {
+          "name": "Naomi",
+          "comment": "It's very nice.",
+          "note": 4
+        },
+        {
+          "name": "Eva",
+          "comment": "It's wonderful, I love the design",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "libelle": "Chain necklace",
+      "enStock": true,
+      "prix": 9.9,
+      "description": "Golden necklace For Women",
+      "categorie": "necklace",
+      "dateAjout": "26-06-2022T00:00:00",
+      "images": [
+        "/necklace/chain1",
+        "/necklace/chain2"
+      ],
+      "comments": [
+        {
+          "name": "Mia",
+          "comment": "The quality is not very thin. Looks good. For such a price is normal.",
+          "note": 2
+        },
+        {
+          "name": "Emily",
+          "comment": "Absoluetly perfect!",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "libelle": "Pearl bracelet",
+      "enStock": true,
+      "prix": 20.5,
+      "description": "Elegant Exquisite Pearl Clavicle Cross Necklace  For Women",
+      "categorie": "necklace",
+      "dateAjout": "26-06-2022T00:00:00",
+      "images": [
+        "/necklace/pearl1",
+        "/necklace/pearl2"
+      ],
+      "comments": [
+        {
+          "name": "Sana",
+          "comment": "The most beautiful product! I like it so much",
+          "note": 5
+        },
+        {
+          "name": "Dora",
+          "comment": "So pretty",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "libelle": "Love bracelet",
+      "enStock": true,
+      "prix": 15,
+      "description": "New Women's Long Chic Bracelect with LOVE letters New collection summer 2022",
+      "categorie": "bracelet",
+      "dateAjout": "05-11-2022T00:00:00",
+      "images": [
+        "/bracelet/love1",
+        "/bracelet/love2",
+        "/bracelet/love3"
+      ],
+      "comments": [
+        {
+          "name": "Charlie",
+          "comment": "So chic and beautiful",
+          "note": 4
+        },
+        {
+          "name": "Josie",
+          "comment": "Absoluetly perfect!",
+          "note": 5
+        },
+        {
+          "name": "JANE",
+          "comment": "on my god",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "libelle": "Heart bracelet",
+      "enStock": true,
+      "prix": 13,
+      "description": "Big heart Golden bracelet with a Chain For women",
+      "categorie": "bracelet",
+      "dateAjout": "22-02-2022T00:00:00",
+      "images": [
+        "/bracelet/heart1",
+        "/bracelet/heart2",
+        "/bracelet/heart3"
+      ],
+      "comments": [
+        {
+          "name": "Alice",
+          "comment": "Nice quality",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "libelle": "Indian bracelet",
+      "enStock": true,
+      "prix": 15.5,
+      "description": "Ring-connected Indian bracelet with a diamond in the center New collection 2022",
+      "categorie": "bracelet",
+      "dateAjout": "12-04-2021T00:00:00",
+      "images": [
+        "/bracelet/Indian1",
+        "/bracelet/indian2"
+      ],
+      "comments": [
+        {
+          "name": "Norah",
+          "comment": "It shines so much. I love it",
+          "note": 4
+        },
+        {
+          "name": "Amber",
+          "comment": "Order well received",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "libelle": "Lovely bracelet",
+      "enStock": true,
+      "prix": 19,
+      "description": "Small Cute bracelet heart/star and diamods for Women",
+      "categorie": "bracelet",
+      "dateAjout": "21-10-2020T00:00:00",
+      "images": [
+        "/bracelet/lovely1",
+        "/bracelet/lovely2"
+      ],
+      "comments": [
+        {
+          "name": "Catalina",
+          "comment": "This is very pretty, I love it because it is thin",
+          "note": 5
+        },
+        {
+          "name": "Josie",
+          "comment": "looks very cute and of good quality",
+          "note": 3
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "libelle": "Double bracelet",
+      "enStock": true,
+      "prix": 10,
+      "description": " Crystal Charm Bracelets for Women Gold Color Beaded Chain Double Layered Adjustable Bracelet",
+      "categorie": "bracelet",
+      "dateAjout": "21-11-2020T00:00:00",
+      "images": [
+        "/bracelet/double1",
+        "/bracelet/double2",
+        "/bracelet/double3"
+      ],
+      "comments": [
+        {
+          "name": "Jennie",
+          "comment": "They look exactly as described good product",
+          "note": 5
+        },
+        {
+          "name": "Rosie",
+          "comment": "Very nice Bracelet. Too bad a little short. Thanks to you.",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "libelle": "Whale bracelet",
+      "enStock": true,
+      "prix": 10,
+      "description": " Crystal Charm Bracelets for Women Gold Color Beaded Chain Double Layered Adjustable Bracelet",
+      "categorie": "bracelet",
+      "dateAjout": "20-01-2020T00:00:00",
+      "images": [
+        "/bracelet/whale1",
+        "/bracelet/whale2",
+        "/bracelet/whale3"
+      ],
+      "comments": [
+        {
+          "name": "Tas",
+          "comment": "Very nice bracelet, quality very good compared to price, recommend, all OK",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "libelle": "Silver bracelet",
+      "enStock": true,
+      "prix": 12.5,
+      "description": "Silver Color Double Layers Heart Charm Bracelets & Bangle For Women",
+      "categorie": "bracelet",
+      "dateAjout": "27-08-2020T00:00:00",
+      "images": [
+        "/bracelet/silver1",
+        "/bracelet/silver2",
+        "/bracelet/silver3"
+      ],
+      "comments": [
+        {
+          "name": "Marie",
+          "comment": "Super beautiful and tender ",
+          "note": 5
+        },
+        {
+          "name": "Jass",
+          "comment": "Delicate and subtle adjustable length",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "libelle": "Chic ring",
+      "enStock": true,
+      "prix": 15,
+      "description": "New Women's Everyday Rings (Six pieces), New collection ",
+      "categorie": "rings",
+      "dateAjout": "01-10-2022T00:00:00",
+      "images": [
+        "/rings/Chic1",
+        "/rings/chic2"
+      ],
+      "comments": [
+        {
+          "name": "Jasmine",
+          "comment": "Rings are wonderful!",
+          "note": 3
+        },
+        {
+          "name": "Kloe",
+          "comment": "Cool",
+          "note": 3
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "libelle": "Green Diamond ring",
+      "enStock": true,
+      "prix": 12,
+      "description": "Cute Green Diamond Ring For Women, New collection ",
+      "categorie": "rings",
+      "dateAjout": "05-05-2022T00:00:00",
+      "images": [
+        "/rings/green_diamond1",
+        "/rings/green_diamond2"
+      ],
+      "comments": [
+        {
+          "name": "Sana",
+          "comment": "So pretty and cheap",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "libelle": "Beauty rings",
+      "enStock": true,
+      "prix": 10,
+      "description": "Beautiful Eight rings For Work, New collection 2022",
+      "categorie": "rings",
+      "dateAjout": "03-09-2022T00:00:00",
+      "images": [
+        "/rings/Beautiful1",
+        "/rings/beautiful2"
+      ],
+      "comments": [
+        {
+          "name": "Isabel",
+          "comment": "Identical to the photo, very nice",
+          "note": 5
+        },
+        {
+          "name": "Valerie",
+          "comment": "received in good condition",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "libelle": "Butterfly ring",
+      "enStock": false,
+      "prix": 12,
+      "description": "2022 New Double Classic Circle Open rings Butterfly-Shaped for Women",
+      "categorie": "rings",
+      "dateAjout": "22-04-2022T00:00:00",
+      "images": [
+        "/rings/butterfly1",
+        "/rings/butterfly2"
+      ],
+      "comments": [
+        {
+          "name": "Lucia",
+          "comment": "Rings are excellent! came quickly",
+          "note": 4
+        },
+        {
+          "name": "Mina",
+          "comment": "Super cute fits like a dime",
+          "note": 5
+        },
+        {
+          "name": "Alice",
+          "comment": "Soo cute",
+          "note": 3
+        },
+        {
+          "name": "Natalia",
+          "comment": "I'm so much in love with it and will order for more from this store",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "libelle": "Cute ring",
+      "enStock": true,
+      "prix": 12.5,
+      "description": "Everyday rings Collection for Women ",
+      "categorie": "rings",
+      "dateAjout": "23-08-2021T00:00:00",
+      "images": [
+        "/rings/Cute1",
+        "/rings/Cute2"
+      ],
+      "comments": [
+        {
+          "name": "Lyla",
+          "comment": "Everything is done qualitatively; Recommended",
+          "note": 5
+        },
+        {
+          "name": "Rose",
+          "comment": "Excellent quality",
+          "note": 4.5
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "libelle": "Crown ring",
+      "enStock": false,
+      "prix": 13,
+      "description": "Round brilliant rings with diamonds",
+      "categorie": "rings",
+      "dateAjout": "14-07-2022T00:00:00",
+      "images": [
+        "/rings/Crown1",
+        "/rings/Crown2"
+      ],
+      "comments": [
+        {
+          "name": "Iris",
+          "comment": "This ring is so cute and pretty",
+          "note": 4
+        },
+        {
+          "name": "Clara",
+          "comment": "I want to buy another one for my sister",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "libelle": "Double rings",
+      "enStock": false,
+      "prix": 12,
+      "description": "Doubled-ring with Diamonds and a Small Heart For Women",
+      "categorie": "rings",
+      "dateAjout": "08-08-2022T00:00:00",
+      "images": [
+        "/rings/double1",
+        "/rings/double2"
+      ],
+      "comments": [
+        {
+          "name": "Violet",
+          "comment": "So chic..",
+          "note": 3.5
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "libelle": "Sol Hair Clip",
+      "enStock": true,
+      "prix": 15,
+      "description": "Sol-shaped Hair Clip For Music Lovers With a small Pearl ,New collection summer 2022",
+      "categorie": "HairClips",
+      "dateAjout": "05-11-2022T00:00:00",
+      "images": [
+        "/hair_clips/Sol1",
+        "/hair_clips/Sol2"
+      ],
+      "comments": [
+        {
+          "name": "Violet",
+          "comment": "I like the glitter of the rhinestones , it's beautiful shines a lot",
+          "note": 5
+        },
+        {
+          "name": "Luna",
+          "comment": "Super !",
+          "note": 4
+        },
+        {
+          "name": "Victoria",
+          "comment": "Beautiful excellent seller fast shipping thanks",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "libelle": "Whale Hair Clip",
+      "enStock": true,
+      "prix": 13,
+      "description": "Green Whale Tail-Shaped Hair Clip with a Sea Pearl For women",
+      "categorie": "HairClips",
+      "dateAjout": "22-02-2022T00:00:00",
+      "images": [
+        "/hair_clips/Whale1",
+        "/hair_clips/Whale2"
+      ],
+      "comments": [
+        {
+          "name": "Alice",
+          "comment": "Nice product",
+          "note": 4
+        },
+        {
+          "name": "Natalia",
+          "comment": "Pretty, I love its color",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "libelle": "Bow Hair Clip",
+      "enStock": true,
+      "prix": 15.5,
+      "description": "Big Bow Hair CLip For everydat, New Summer Collection",
+      "categorie": "HairClips",
+      "dateAjout": "12-04-2021T00:00:00",
+      "images": [
+        "/hair_clips/Bow1",
+        "/hair_clips/Bow2"
+      ],
+      "comments": [
+        {
+          "name": "Stella",
+          "comment": "I love it",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "libelle": "Flowers Hair Clip",
+      "enStock": true,
+      "prix": 19,
+      "description": "Big Flower Chic Hair Clip for Women",
+      "categorie": "HairClips",
+      "dateAjout": "21-10-2020T00:00:00",
+      "images": [
+        "/hair_clips/Flowers1",
+        "/hair_clips/Flowers2"
+      ],
+      "comments": [
+        {
+          "name": "Camila",
+          "comment": "I likes it very much.",
+          "note": 4.5
+        },
+        {
+          "name": "Sofia",
+          "comment": "Very happy with the request. It came pretty fast. The clip is very nice. I recommend the product and seller",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "libelle": "Simple Hair Clip",
+      "enStock": true,
+      "prix": 15,
+      "description": "New Simple Hair Clips With Long Chain and Dimonds",
+      "categorie": "HairClips",
+      "dateAjout": "01-10-2022T00:00:00",
+      "images": [
+        "/hair_clips/Simple1",
+        "/hair_clips/Simple2"
+      ],
+      "comments": [
+        {
+          "name": "Flora",
+          "comment": "Hairpin is very beautiful, fast delivery.",
+          "note": 4
+        },
+        {
+          "name": "Luna",
+          "comment": "Super !",
+          "note": 4
+        },
+        {
+          "name": "Emma",
+          "comment": "Beautiful excellent seller fast shipping thanks",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "libelle": "Butterfly Hair CLip",
+      "enStock": true,
+      "prix": 15,
+      "description": "Big Butterfly-Shaped Hair Clips New collection For Summer 2022",
+      "categorie": "HairClips",
+      "dateAjout": "05-11-2022T00:00:00",
+      "images": [
+        "/hair_clips/Butterfly1",
+        "/hair_clips/Butterfly2"
+      ],
+      "comments": [
+        {
+          "name": "Amelia",
+          "comment": "Recommanded.",
+          "note": 3
+        },
+        {
+          "name": "Ava",
+          "comment": "So cute.",
+          "note": 2
+        },
+        {
+          "name": "Raya",
+          "comment": "Beautiful excellent seller fast shipping thanks",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "libelle": "Wings Hair Clip",
+      "enStock": true,
+      "prix": 13,
+      "description": "Wings-Shaped Hair Clips with Diamonds For women",
+      "categorie": "HairClips",
+      "dateAjout": "22-02-2022T00:00:00",
+      "images": [
+        "/hair_clips/Wings1",
+        "/hair_clips/Wings2"
+      ],
+      "comments": [
+        {
+          "name": "Mia",
+          "comment": "Love it!",
+          "note": 4
+        },
+        {
+          "name": "Isabella",
+          "comment": "Just like the picture",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "libelle": "Moon Hair Clip",
+      "enStock": true,
+      "prix": 15.5,
+      "description": "Cute and Chic Hair Clip, New collection 2022",
+      "categorie": "HairClips",
+      "dateAjout": "12-04-2021T00:00:00",
+      "images": [
+        "/hair_clips/moon1",
+        "/hair_clips/moon2",
+        "/hair_clips/moon3"
+      ],
+      "comments": [
+        {
+          "name": "Olivia",
+          "comment": "Satisfied. Pretty hair clip for the price",
+          "note": 4
+        },
+        {
+          "name": "Emma",
+          "comment": "So cute.",
+          "note": 2
+        },
+        {
+          "name": "Sophia",
+          "comment": "Beautiful excellent seller fast shipping thanks",
+          "note": 4
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "libelle": "Stars Hair Clip",
+      "enStock": true,
+      "prix": 19,
+      "description": "Multiple Stars-Hair Clip for Women",
+      "categorie": "HairClips",
+      "dateAjout": "23-06-2020T00:00:00",
+      "images": [
+        "/hair_clips/Star1",
+        "/hair_clips/star2"
+      ],
+      "comments": [
+        {
+          "name": "Yara",
+          "comment": "So Beautiful !!!",
+          "note": 5
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "libelle": "Asian Hair Clip",
+      "enStock": true,
+      "prix": 15,
+      "description": "Antic Women Asian Hair Clip ",
+      "categorie": "HairClips",
+      "dateAjout": "11-10-2022T00:00:00",
+      "images": [
+        "/hair_clips/asian1",
+        "/hair_clips/asian2",
+        "/hair_clips/asian3",
+        "/hair_clips/asian4"
+      ],
+      "comments": [
+        {
+          "name": "Maria",
+          "comment": "The quality is excellent",
+          "note": 5
+        },
+        {
+          "name": "Mina",
+          "comment": "The hair clip is unrealistically beautiful, happy!",
+          "note": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+<app-navbar></app-navbar>
+<div style="height: 600px; width: 1000px; margin-top:100px;">
+    <div style="display: flex; margin-left: 200px;"  >
+        <div class="col-lg-7 pb-5">
+            <div id="carouselExampleDark" class="carousel slide"  class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" *ngIf="auxprd.images.length>2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" *ngIf="auxprd.images.length>3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" *ngIf="auxprd.images.length>4"></button>
+                </div>
+                <div class="carousel-inner border">
+                  <div class="carousel-item" data-bs-interval="10000" *ngFor="let i of auxprd.images,index as nb" [ngClass]="nb==0 ? 'active' : ''">
+                    <img [src]="'/assets'+i+'.jpg'" class="d-block w-100" alt="..." *ngIf="!i.includes('http')">
+                    <img [src]="i" class="d-block w-100" alt="..." *ngIf="i.includes('http')">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div>
+            <div style="width: 600px;">
+                <h3 class="font-weight-semi-bold" style="margin-left: 80px;">Modify a product</h3>
+                <form [formGroup]="productForm" (ngSubmit)="add()">
+                    <div class="page">
+                        <div class="field field_v1">
+                            <label for="first-name" class="ha-screen-reader">Name</label>
+                            <input formControlName="libelle" id="first-name" class="field__input" placeholder="Name of the product" required>
+                            <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Name</span>
+                            </span>
+                        </div>
+                        <div class="field field_v2">
+                            <label for="last-name" class="ha-screen-reader">Price</label>
+                            <input type="number"  formControlName="price" for="last-name"  class="field__input" placeholder="Price of the product" required>
+                            <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Price</span>
+                            </span>
+                        </div>    
+                        <div class="field field_v2">
+                            <label for="email" class="ha-screen-reader">Description</label>
+                            <textarea  formControlName="description" name="i" id="i"  class="field__input" placeholder="Description of the new produt" ></textarea>
+                            <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Description</span>
+                            </span>
+                        </div>
+                        <div class="field field_v2">
+                            <label for="last-name" class="ha-screen-reader">Category</label>
+                            <select formControlName="categorie" name="c" id="c"   class="field__input" placeholder="select the category of the product" required>
+                                <option selected> </option>
+                                <option value="bracelet">Hair Clip</option>
+                                        <option value="bracelet">Bracelet</option>
+                                        <option value="necklace">Necklace</option>
+                                        <option value="ring">Ring</option>
+                                        <option value="ring">Earring</option>
+                            </select>
+                            <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Category</span>
+                            </span>
+                        </div>  
+                        <div class="field field_v2">
+                            <input type="checkbox" name="i" id="i"  formControlName="Stock" >
+                            <span class="field__label-wrap" aria-hidden="true">
+                            <span class="field__label">Available</span>
+                            </span>
+                        </div>
+                            <input type="submit" value="Modify"  class="btn btn-primary" data-dismiss="modal"  data-toggle="modal" data-target="#exampleModal">
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Exellent !</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      This Product has been succesfully modified !
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="navige()">Awesome !</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+  </div> 

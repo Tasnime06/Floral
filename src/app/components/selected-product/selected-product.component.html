@@ -1,0 +1,248 @@
+<app-navbar></app-navbar>
+<div class="container-fluid py-5">
+    <div class="row px-xl-5">
+        
+        <div class="col-lg-5 pb-5">
+            <div id="carouselExampleDark" class="carousel slide"  class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3" *ngIf="prd.images.length>2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4" *ngIf="prd.images.length>3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5" *ngIf="prd.images.length>4"></button>
+                </div>
+                <div class="carousel-inner border">
+                  <div class="carousel-item" data-bs-interval="10000" *ngFor="let i of prd.images,index as nb" [ngClass]="nb==0 ? 'active' : ''">
+                    <img [src]="'/assets'+i+'.jpg'" class="d-block w-100" alt="..." *ngIf="!i.includes('http')">
+                    <img [src]="i" class="d-block w-100" alt="..." *ngIf="i.includes('http')">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class="col-lg-7 pb-5">
+            <h3 class="font-weight-semi-bold">{{prd.libelle}}</h3>
+            <div class="d-flex mb-3">
+                <div class="text-primary mr-2">
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star"></small>
+                    <small class="fas fa-star-half-alt"></small>
+                    <small class="far fa-star"></small>
+                </div>
+               <div style="display: flex;justify-content: space-between;width: 176px;">
+                <small class="pt-1"> ( {{prd.comments.length}} Reviews ) </small>
+                <p *ngIf="prd.enStock" style="color: green;"> Available</p>
+                <p *ngIf="!prd.enStock" style="color:red;"> Unavailable</p>
+               </div>
+            </div>
+            <h3 class="font-weight-semi-bold mb-4">${{prd.prix}}</h3>
+            <p class="mb-4">{{prd.description}} <br> {{prd.description}} <br> {{prd.description}} <br> {{prd.description}}</p>
+            <div class="d-flex mb-3">
+                <p class="text-dark font-weight-medium mb-0 mr-3">Sizes:</p>
+                <form>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="size-1" name="size">
+                        <label class="custom-control-label" for="size-1">XS</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="size-2" name="size">
+                        <label class="custom-control-label" for="size-2">S</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="size-3" name="size">
+                        <label class="custom-control-label" for="size-3">M</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="size-4" name="size">
+                        <label class="custom-control-label" for="size-4">L</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="size-5" name="size">
+                        <label class="custom-control-label" for="size-5">XL</label>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex mb-4">
+                <p class="text-dark font-weight-medium mb-0 mr-3">Colors:</p>
+                <form>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="color-1" name="color">
+                        <label class="custom-control-label" for="color-1">Black</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="color-2" name="color">
+                        <label class="custom-control-label" for="color-2">White</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="color-3" name="color">
+                        <label class="custom-control-label" for="color-3">Red</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="color-4" name="color">
+                        <label class="custom-control-label" for="color-4">Blue</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" class="custom-control-input" id="color-5" name="color">
+                        <label class="custom-control-label" for="color-5">Green</label>
+                    </div>
+                </form>
+            </div>
+            <div class="d-flex align-items-center mb-4 pt-2">
+                <div class="input-group quantity mr-3" style="width: 130px;">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-minus" (click)="dimnum()">
+                        <i class="fa fa-minus"></i>
+                        </button>
+                    </div>
+                    <input type="text" class="form-control bg-secondary text-center" [value]="num">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary btn-plus" (click)="augnum()">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary px-3" (click)="addtocart()" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal33"><i class="fa fa-shopping-cart mr-1"></i> Add To Cart</button>
+                <div class="modal fade" id="exampleModal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Exellent !</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            This Product is succesfully added to your Cart !
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" >Awesome !</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" routerLink="/cart">Check Cart </button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div [hidden] = "!isloggedin">
+                <button class="btn btn-primary px-3" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal222"><i class="fa fa-shopping-cart mr-1" ></i>Delete Product</button>
+                <button class="btn btn-primary px-3" [routerLink]="['/modifyproduct', prd.id]"><i class="fa fa-shopping-cart mr-1"></i>Modify Product</button>
+
+                <div class="modal fade" id="exampleModal222" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Confirmation !</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          Are you sure you wante to Delete This Product ?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" >No</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="supprimerProduit(prd)">Yes !</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="row px-xl-5">
+        <div class="col">
+            <div class="nav nav-tabs justify-content-center border-secondary mb-4">
+                <a class="nav-item nav-link active">Reviews</a>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-pane-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="mb-4">{{prd.comments.length}} reviews for "{{prd.libelle}}"</h4>
+                            <div class="media mb-4" *ngFor="let p of prd.comments">
+                                <div class="media-body">
+                                    <h6>{{p.name}}</h6>
+                                    <div class="text-primary mb-2">
+                                        {{p.note|star}}
+                                    </div>
+                                    <p>{{p.comment}}.</p>
+                                </div>
+                                <div class="d-flex align-items-center mb-4 pt-2">
+                                    <button data-toggle="modal" data-target="#exampleModal2" class="btn btn-primary px-3" [hidden] = "!isloggedin" (click)="supprimerComment(p.name)"><i class="fa fa-shopping-cart mr-1"></i>Delete Comment</button>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Exellent !</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      This Review is succesfully Deleted !
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Awesome !</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="mb-4">Leave a review</h4>       
+                            <form [formGroup]="commentForm" (ngSubmit)="add()">
+                                <div class="d-flex my-3">
+                                    <label class="mb-0 mr-2" for="formControlRange">Your Rating * :</label>
+                                    <div class="text-primary">
+                                        <input type="range" class="form-control-range" name="note" formControlName="note" id="note" min="1" max="5">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment">Your Review *</label>
+                                    <textarea name="comment" formControlName="comment" id="comment" cols="30" rows="5" class="form-control" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" class="form-control" name="name" formControlName="name" id="name" required>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <input type="submit" value="Leave Your Review" class="btn btn-primary px-3" data-toggle="modal" data-target="#exampleModal">
+                                </div>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Exellent !</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Your Review is succesfully added ! <br> Thanks for your feedback .
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-dismiss="modal">Awesome !</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

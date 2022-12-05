@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+<div style="height: 600px; width: 1000px; margin-top:100px;">
+<div style="display: flex; margin-left: 200px;"  >
+    <img src="assets/photo/ajoutbanner.jpg" alt="image" height="610px" style="margin-right: 50px; border-radius: 10px;"  >
+    <div>
+        <div style="width: 600px;">
+            <h3 class="font-weight-semi-bold" style="margin-left: 80px;">Add a new product</h3>
+            <form [formGroup]="productForm" (ngSubmit)="add()">
+                <div class="page">
+                    <div class="field field_v1">
+                        <label for="first-name" class="ha-screen-reader">Name</label>
+                        <input formControlName="libelle" id="first-name" class="field__input" placeholder="Name of the product" required>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Name</span>
+                        </span>
+                    </div>
+                    <div class="field field_v2">
+                        <label for="last-name" class="ha-screen-reader">Price</label>
+                        <input type="number"  formControlName="price" for="last-name"  class="field__input" placeholder="Price of the product" required>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Price</span>
+                        </span>
+                    </div>    
+                    <div class="field field_v2">
+                        <label for="email" class="ha-screen-reader">Description</label>
+                        <textarea  formControlName="description" class="field__input" placeholder="Description of the new produt" ></textarea>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Description</span>
+                        </span>
+                    </div>
+                    <div class="field field_v2">
+                        <label for="last-name" class="ha-screen-reader">Category</label>
+                        <select formControlName="categorie"  class="field__input" placeholder="select the category of the product" required="true">
+                                    <option value="earings">Earings</option>
+                                    <option value="HairClips">Hair Clips</option>
+                                    <option value="bracelet">Bracelet</option>
+                                    <option value="necklace">Necklace</option>
+                                    <option value="ring">Ring</option>
+                        </select>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Category</span>
+                        </span>
+                    </div>  
+                    <div class="field field_v1">
+                        <label for="first-img" class="ha-screen-reader">image 1 </label>
+                        <input formControlName="imagee" id="first-img" class="field__input" placeholder="Link of first image" required>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">image 1</span>
+                        </span>
+                    </div>
+
+                    <div class="field field_v1">
+                        <label for="second-img" class="ha-screen-reader">image 2 </label>
+                        <input formControlName="imagee2" id="second-img" class="field__input" placeholder="Link of second image" required>
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">image 2</span>
+                        </span>
+                    </div>
+                    
+                    <div class="field field_v2">
+                        <input type="checkbox" formControlName="stock" id="teess">
+                        <span class="field__label-wrap" aria-hidden="true">
+                        <span class="field__label">Available</span>
+                        </span>
+                    </div>
+                    <input type="submit" value="Add"  class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#exampleModal">>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalLabel">Exellent !</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  This Product has been succesfully Added !
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="navige()">Awesome !</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

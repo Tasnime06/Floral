@@ -1,0 +1,8 @@
+<app-navbar></app-navbar>
+<ul>
+    <li *ngFor="let i of lesProduits">
+        {{i.categorie}}
+        {{i.libelle}}
+        <app-products [prd]="i"></app-products>
+    </li>
+</ul>
